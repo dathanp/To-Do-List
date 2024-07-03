@@ -54,4 +54,8 @@ public class TaskManager {
 		}
 		System.out.println("No task found");
 	}
+	
+	public List<Task> getTasks() {
+		return tasks;
+	}
 }

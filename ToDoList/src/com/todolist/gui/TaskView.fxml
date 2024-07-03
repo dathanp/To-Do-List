@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.todolist.gui.TaskController">
+    <Label text="To-Do List" style="-fx-font-size: 24px;"/>
+    <HBox spacing="10">
+        <TextField fx:id="taskInput" promptText="Add a new task" />
+        <Button text="Add Task" onAction="#handleAddTask" />
+    </HBox>
+    <ListView fx:id="taskList" />
+</VBox>
